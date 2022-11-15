@@ -31,8 +31,7 @@ stages{
 stage('CheckoutCode'){
 
 steps{
-
-git credentialsId: '28f70f33-2db1-46d0-94b8-f0fe4523e251', url: 'https://github.com/wipro-pvt-limited/maven-web-application.git'    
+git credentialsId: '28f70f33-2db1-46d0-94b8-f0fe4523e251', url: 'https://github.com/wipro-pvt-limited/piorson.git'
 }
 
 }
