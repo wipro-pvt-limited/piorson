@@ -55,7 +55,7 @@ stage('docker image build'){
           #!/bin/bash -l
 
         
-        docker build -t maven3:${version} .
+        docker build -t swamykishore:${version} .
         
         """
         
@@ -71,7 +71,7 @@ stage('Docker login'){
 
         docker login -u shaikfayazz444 -p 8688949515
         
-        docker tag maven3:${version} shaikfayazz444/ayaan:${version}
+        docker tag swamykishore:${version} shaikfayazz444/ayaan:${version}
         
         """
         
