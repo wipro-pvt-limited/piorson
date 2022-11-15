@@ -71,7 +71,7 @@ stage('Docker login'){
 
         docker login -u shaikfayazz444 -p 8688949515
         
-        docker tag swamykishore:${version} shaikfayazz444/ayaan:${version}
+        docker tag swamykishore:${version} shaikfayaz444/mithunwebapp:${version}
         
         """
         
@@ -87,7 +87,7 @@ stage('docker push'){
         
         sh """\
         #!/bin/bash -l
-       docker push shaikfayazz444/ayaan:${version}
+       docker push shaikfayazz444/mithunwebapp:${version}
         
         """
         
